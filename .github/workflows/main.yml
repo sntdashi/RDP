@@ -52,7 +52,7 @@ jobs:
           
           echo "RDP_CREDS=User: Vally | Password: $password" >> $env:GITHUB_ENV
           
-          if (-not (Get-LocalUser -Name "Yanzz")) {
+          if (-not (Get-LocalUser -Name "Vally")) {
               Write-Error "User creation failed"
               exit 1
           }
